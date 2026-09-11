@@ -1,0 +1,158 @@
+.comic-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    color: #333;
+    flex-wrap: wrap;
+}
+
+.comic-details img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.comic-details .image-small {
+    width: 80px;
+    height: 80px;
+}
+
+.comic-infos {
+    flex: 1;
+    max-width: 600px;
+}
+
+.comic-infos h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.comic-infos .price {
+    font-size: 28px;
+    color: darkred;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.comic-infos .description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.editions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.editions button {
+    padding: 10px 15px;
+    border: 1px solid darkred;
+    border-radius: 5px;
+    background-color: red;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 14px;
+    color: #fff;
+}
+
+.editions button:hover{
+    border-color: #333;
+    background-color: yellow;
+    color: #333;
+}
+
+.add-to-cart {
+    padding: 15px 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.add-to-cart:hover {
+    border-color: #333;
+    background-color: yellow;
+    color: #333;
+}
+
+.comic-infos .note {
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+    line-height: 1.4;
+}
+
+.unknown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding-left: 34rem;
+}
+
+.agencia{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 200%;
+    padding: auto;
+}
+
+@media (max-width: 1024px){
+
+    .comic-infos{
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .comic-details{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }    
+    .comic-infos h1{
+        font-size: 20px;
+    }
+    
+    .comic-infos .price{
+        font-size: 24px;
+    }
+
+    .comic-infos .description{
+        font-size: 14px;
+    }
+
+    .add-to-cart{
+        width: 100%;
+    }
+
+    .editions button {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .comic-details img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .comic-infos .note{
+        font-size: 12px;
+    }
+
+    .editions {
+        justify-content: center;
+    }
+}

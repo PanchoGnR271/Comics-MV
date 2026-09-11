@@ -1,0 +1,56 @@
+.search-results-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.search-results-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.search-result-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 15px 0;
+}
+
+.result-image {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.result-info {
+  flex: 1;
+}
+
+.result-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.result-description {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+  max-width: 600px;
+  line-height: 1.4;
+}
+
+.result-price {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  margin-top: 5px;
+}
+
+.result-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-top: 15px;
+}
